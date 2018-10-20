@@ -35,7 +35,9 @@ public class SimpleServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		out.print("<html><body>");
+		out.print("<html><head>");
+		out.print("<title>Welcome Page</title>");
+		out.print("</head><body>");
 		out.print("It is now " + new Date());
 		out.print("<br/>To go to Login page click <a href=\"LoginServlet.html\">here</a>");
 		out.print("</body></html>");
