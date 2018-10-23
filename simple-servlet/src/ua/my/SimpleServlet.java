@@ -33,7 +33,7 @@ public class SimpleServlet extends HttpServlet {
 		out.print("<title>Welcome Page</title>");
 		out.print("</head><body>");
 		out.print("It is now  " + new Date());
-		out.print("\n<br/>To go to Login page click <a href=\"LoginServlet.html\">here</a>");
+		out.print("<br/><br/>To go to Login page click <a href=\"LoginServlet.html\">here</a>");
 		out.print("</body></html>");
 	}
 }
