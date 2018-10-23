@@ -10,14 +10,17 @@
 	<%
 		String user = request.getParameter("user");
 		String pass = request.getParameter("password");
+		
 		if ("admin".equals(user) && "admin".equals(pass)) {
 			out.println("Login OK");
+			response.sendRedirect("/DataBase");
+			//out.println("Login ok");
 		} else {
 			out.println("Login Fail");
 		}
 	%>
 	<form action="LoginServlet.html" method="post">
-		<input type="submit" value="Еще раз"/>
+		<input type="submit" value="Try again"/>
 	</form>
 </body>
 </html>
